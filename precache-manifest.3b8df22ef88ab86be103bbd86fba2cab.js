@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f96bc425cb35c9643e8f21598dd5675",
+    "revision": "0579bf92f6caa00c69821fb9abe9aa99",
     "url": "/UnStade-Landing/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/UnStade-Landing/static/js/2.5be1bb7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "24ffe302a97148554716",
-    "url": "/UnStade-Landing/static/js/main.902d10ad.chunk.js"
+    "revision": "a03c181320dd19101901",
+    "url": "/UnStade-Landing/static/js/main.adb991a1.chunk.js"
   },
   {
     "revision": "83a2ce75c3b783b46fba",

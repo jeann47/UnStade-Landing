@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/UnStade-Landing/precache-manifest.0306a37ff1251620a6ccace17e3a771b.js"
+  "/UnStade-Landing/precache-manifest.3b8df22ef88ab86be103bbd86fba2cab.js"
 );
 
 self.addEventListener('message', (event) => {
