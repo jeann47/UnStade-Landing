@@ -79,7 +79,7 @@ export const Bottom = styled.div`
     align-items: center;
     flex-direction: row-reverse;
     @media (max-width: 1024px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     margin-bottom: 10%;
 `;
@@ -97,6 +97,17 @@ export const ContactContainer = styled(Form)`
         align-self: center;
         margin-bottom: 5px;
     }
+
+    @media (max-width: 1024px) {
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        width: 60%;
+    }
+    @media (max-width: 425px) {
+        width: 90%;
+        margin: 5%;
+    }
 `;
 
 export const BottomContainer = styled.div`
@@ -109,6 +120,10 @@ export const BottomContainer = styled.div`
         :hover {
             color: #bd93f9;
         }
+    }
+
+    @media (max-width: 425px) {
+        text-align: center;
     }
 `;
 
@@ -133,6 +148,13 @@ export const Footer = styled.div`
     h1 {
         align-self: center;
         font-size: 90pt;
+
+        @media (max-width: 425px) {
+            font-size: 60pt;
+        }
+        @media (max-width: 320px) {
+            font-size: 30pt;
+        }
     }
 `;
 
