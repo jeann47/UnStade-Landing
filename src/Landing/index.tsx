@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-indent-props */
 import React, { useState } from 'react';
+import axios from 'axios';
+import { FormHelpers } from '@unform/core';
 import { AlertTitle } from '@material-ui/lab';
 import { Instagram, Twitter } from '@material-ui/icons';
 import Animation from '../assets/intro.gif';
@@ -25,8 +27,32 @@ import {
 import Input from '../Input';
 import Textarea from '../Textarea';
 
+interface ContactForm {
+    name: string;
+    email: string;
+    message: string;
+}
+
 const Landing: React.FC = () => {
     const [interested, setInterest] = useState(false);
+    const [error, setError] = useState(false);
+
+    async function handleSubmit(data: ContactForm, { reset }: FormHelpers) {
+        try {
+            const { name, email, message } = data;
+            await axios.post(`${process.env.API}/mail/contact`, {
+                name,
+                email,
+                message,
+                subject: 'Landind page contact',
+            });
+
+            reset();
+        } catch (err) {
+            setError(true);
+            setTimeout(() => setError(false), 5000);
+        }
+    }
     return (
         <>
             {interested && (
@@ -43,6 +69,7 @@ const Landing: React.FC = () => {
                     ou entre em contato abaixo para mais informações
                 </Alert>
             )}
+
             <Container>
                 <Main>
                     <Image src={Logo} />
@@ -72,7 +99,21 @@ const Landing: React.FC = () => {
                     alt="gif demonstrando tecnologias encontradas no blog (web, mobile, api rest, banco de dados, servidores, git, mvc e terminal"
                 />
                 <Bottom>
-                    <ContactContainer onSubmit={(data) => console.log(data)}>
+                    {error && (
+                        <Alert severity="error">
+                            <AlertTitle>Ocorreu um erro!</AlertTitle>
+                            Acesse nossas{' '}
+                            <a
+                                href="https://www.instagram.com/un.stade"
+                                target="__blank"
+                                onClick={() => setInterest(false)}
+                            >
+                                Redes Sociais
+                            </a>{' '}
+                            ou entre em contato pelo email.
+                        </Alert>
+                    )}
+                    <ContactContainer onSubmit={handleSubmit}>
                         <h1>Fale conosco</h1>
                         <Input name="name" type="text" placeholder="Nome" />
                         <Input name="email" type="email" placeholder="Email" />

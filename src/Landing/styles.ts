@@ -191,8 +191,7 @@ export const Credits = styled.div`
 `;
 
 export const Alert = styled(AlertUi)`
-    width: 30%;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     a {
