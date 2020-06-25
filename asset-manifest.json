@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/UnStade-Landing/static/js/main.adb991a1.chunk.js",
-    "main.js.map": "/UnStade-Landing/static/js/main.adb991a1.chunk.js.map",
+    "main.js": "/UnStade-Landing/static/js/main.eabbf902.chunk.js",
+    "main.js.map": "/UnStade-Landing/static/js/main.eabbf902.chunk.js.map",
     "runtime-main.js": "/UnStade-Landing/static/js/runtime-main.30e00bae.js",
     "runtime-main.js.map": "/UnStade-Landing/static/js/runtime-main.30e00bae.js.map",
-    "static/js/2.5be1bb7e.chunk.js": "/UnStade-Landing/static/js/2.5be1bb7e.chunk.js",
-    "static/js/2.5be1bb7e.chunk.js.map": "/UnStade-Landing/static/js/2.5be1bb7e.chunk.js.map",
+    "static/js/2.d53c2208.chunk.js": "/UnStade-Landing/static/js/2.d53c2208.chunk.js",
+    "static/js/2.d53c2208.chunk.js.map": "/UnStade-Landing/static/js/2.d53c2208.chunk.js.map",
     "index.html": "/UnStade-Landing/index.html",
-    "precache-manifest.3b8df22ef88ab86be103bbd86fba2cab.js": "/UnStade-Landing/precache-manifest.3b8df22ef88ab86be103bbd86fba2cab.js",
+    "precache-manifest.430b268c7c4feab26233fa3fccee836d.js": "/UnStade-Landing/precache-manifest.430b268c7c4feab26233fa3fccee836d.js",
     "service-worker.js": "/UnStade-Landing/service-worker.js",
-    "static/js/2.5be1bb7e.chunk.js.LICENSE.txt": "/UnStade-Landing/static/js/2.5be1bb7e.chunk.js.LICENSE.txt",
+    "static/js/2.d53c2208.chunk.js.LICENSE.txt": "/UnStade-Landing/static/js/2.d53c2208.chunk.js.LICENSE.txt",
     "static/media/Logo.svg": "/UnStade-Landing/static/media/Logo.a05c6769.svg",
     "static/media/intro.gif": "/UnStade-Landing/static/media/intro.d070f8f2.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.30e00bae.js",
-    "static/js/2.5be1bb7e.chunk.js",
-    "static/js/main.adb991a1.chunk.js"
+    "static/js/2.d53c2208.chunk.js",
+    "static/js/main.eabbf902.chunk.js"
   ]
 }
